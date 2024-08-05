@@ -1,0 +1,75 @@
+/*section.css*/
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__left {
+  width: 30%;
+  margin-right: 100px;
+  padding-top: 15px;
+}
+
+.content__right {
+  width: 70%;
+  padding: 20px;
+  color: var(--color-black);
+  border-right: 3px solid var(--color-tertiary);
+  background-color: var(--color-white);
+}
+
+.content__heading {
+  margin: 50px 0 20px 0;
+  padding-left: 10px;
+  color: var(--color-black);
+  background-color: var(--color-secondary);
+}
+
+.content__left > .content__heading:first-child,
+.content__right > .content__heading:first-child {
+  margin-top: 10px;
+}
+
+.content__right h3 {
+  padding-left: 5px;
+  border-left: 8px solid var(--color-primary);
+}
+
+.content__left .content__about-text {
+  padding-left: 15px;
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.content__right h4,
+.content__right p {
+  margin: 10px 0;
+}
+
+/* Effet au survol */
+.experience,
+.education,
+.skills__list-item {
+  position: relative;
+  padding-right: 20px;
+  transition: padding-right 0.3s ease;
+}
+
+.experience:hover::before,
+.education:hover::before,
+.skills__list-item:hover::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-primary);
+}
+
+.experience:hover,
+.education:hover,
+.skills__list-item:hover {
+  padding-right: 15px;
+}

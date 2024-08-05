@@ -1,0 +1,71 @@
+/*style.css*/
+/* Import des polices */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* @font-face pour Raleway normale */
+@font-face {
+  font-family: "Raleway";
+  src: url("../Fonts/static/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face pour Raleway gras */
+@font-face {
+  font-family: "Raleway";
+  src: url("../Fonts/static/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* @font-face pour Raleway italique */
+@font-face {
+  font-family: "Raleway";
+  src: url("../Fonts/static/Raleway-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+/* Réinitialisation de base */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Variables de couleurs */
+:root {
+  --color-primary: #782221; /* Couleur principale */
+  --color-secondary: #dbc2a4; /* Couleur secondaire */
+  --color-tertiary: #2c1d27; /* Couleur tertiaire */
+  --color-black: #000000; /* Noir */
+  --color-white: #ffffff; /* Blanc */
+}
+
+/* Styles de base pour le body */
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem; /* 16px */
+  line-height: 1.6;
+  color: var(--color-tertiary);
+}
+
+main {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto; /* Centre le main horizontalement */
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}

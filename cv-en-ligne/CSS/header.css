@@ -1,0 +1,44 @@
+/*header.css*/
+
+header.profile {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.profile__photo-link {
+  display: inline-block;
+}
+
+.profile__photo {
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px var(--color-secondary);
+  transition: transform 0.3s ease;
+}
+
+.profile__photo-link:hover .profile__photo {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.profile__contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  margin-top: 40px;
+  background-color: var(--color-tertiary);
+}
+
+.profile__contact-info a {
+  text-align: start;
+  color: var(--color-white);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.profile__contact-info a:hover {
+  text-decoration: underline;
+}
